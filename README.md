@@ -1,1 +1,1 @@
-automatetheboringstuff
+Projects and snippets from book: "Automate the boring stuff with python"
