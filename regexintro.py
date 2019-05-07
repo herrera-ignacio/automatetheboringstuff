@@ -90,7 +90,39 @@ vowelRegex = re.compile(r'[aeiouAEIOU]')
 vowels = vowelRegex.findall('Robocop eats baby food. BABY FOOD.')
 print(vowels)
 
+# MATCHING EVERYTHING WITH DOT-batwostarRegex
+nameRegex = re.compile(r'First Name: (.*) Last Name: (.*)')
+mo = nameRegex.search('First Name: Nacho Last Name: Herrera')
+print(mo.group(1))
+print(mo.group(2))
+print(mo.group())
+
+# SUBSTITUTE STRING WITH THE SUB() METHOD
+
+namesRegex = re.compile(r'Agent \w+')
+print(namesRegex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.'))
+
+
+# REVIEW
+
+# ? 0 or 1 of the preceding group
+# * 0+ of the preceding group
+# + 1+ of the preceding group
+# {n} exactly n of the preceding group
+# {n,} n+ ...
+# {,m} 0...m
+# {n,m} n...m
+# {n,m}? or *? or +? nongreedy match of preceding group
+# ^spam means the string must begin with spam
+# spam$ means the string mujst end with spam
+# . (dot) matches any char except \n
+# \d \w \s digit word space
+# \D \W \S anything except digit word space
+# [abc] matches any character between the brackets
+# [^abc] matches any char that isnt between the brackets
 # CARET AND DOLAR assignment
-# ^ -> match must occur at the beginning of the searched text
-# $ -> match must end with this regex pattern
-# ^ and $ -> exact match
+# (.*) anything, greedy mode (.*?) for nongreedy
+# re.DOTALL to match \n
+# re.IGNORECASE
+# re.VERBOSE to write comments
+# re.compile(r'regex', re.ARG | re.ARG2 | ... )
