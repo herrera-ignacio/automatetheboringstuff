@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\herrera-ignacio\Documents\Academic\python\automatetheboringstuff\debugtools\tracebacks.py", line 4, in <module>
+    raise Exception('This is an error message')
+Exception: This is an error message

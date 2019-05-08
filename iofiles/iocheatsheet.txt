@@ -1,0 +1,19 @@
+# import os
+# .getcwd & .chdir('cd')
+# .path -> .join('folder1', ..., 'foldern') .split(path)
+# path.split(os.path.sep)
+# .makedirs
+# .listdir
+# .path -> .abspath(path) .isabs(path) .relpath(path, start) .basename(path) .dirname(path)
+# .path -> .exists(path) .isdir(path) .isfile(path)
+# .path.getsize(path)
+
+# WRITE AND READ
+# f = open(path, mode)
+# .close()
+# import shelve -> shelve.open()
+# import pprint -> pprint.pformat(dic) -> returns string to write in .py file
+
+# with open('some_file.txt') as f:
+#    for line in f.readlines():
+#        contents += line

@@ -1,0 +1,20 @@
+import shutil, os
+shutil.copy('file', 'path|rename')
+shutil.copytree(source, destination)
+shutil.move(file, path|rename) # may overwrite
+
+os.unlink(path) # delete file
+os.rmdir(path) # delete empty folder
+shutil.rmdir(path) # delete folder
+
+os.walk() # walking a directory tree
+
+# import os
+# .getcwd & .chdir('cd')
+# .path -> .join('folder1', ..., 'foldern') .split(path)
+# path.split(os.path.sep)
+# .makedirs
+# .listdir
+# .path -> .abspath(path) .isabs(path) .relpath(path, start) .basename(path) .dirname(path)
+# .path -> .exists(path) .isdir(path) .isfile(path)
+# .path.getsize(path)
