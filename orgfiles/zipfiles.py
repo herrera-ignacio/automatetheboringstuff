@@ -11,7 +11,7 @@ exampleZip = zipfile.ZipFile('example.zip')
 exampleZip.namelist() # get contents
 
 spamInfo = exampleZip.getinfo('spam.txt') # get file info
-spame,Info.file_size
+spamInfo.file_size
 spamInfo.compress_size
 
 print('Compressed file is %sx smaller!' % (round(spamInfo.file_size / spamInfo.compress_size(), 2)))
